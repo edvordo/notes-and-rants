@@ -107,13 +107,16 @@ and hit enter
 
 The other thing the tutorials (I found) out there won't tell you, is that in
 case you encounter an error similar to 
-`gpg: skipping "[something]": secret key not available` you need to do
+`gpg: skipping "96B8A72857ADEC06": secret key not available` you need to do
 one more console command, you might as well make this one global
 
 `git config --global gpg.program path_to_gpg`
 
 You can find the `path_to_gpg` using `where gpg` and just copy-paste it. This
 happens only _sometimes_ apparently, but I wasted good hour on this.
+
+In case the error persist, but instead of the key ID it stating your `user.name`
+and/or `user.email`, you misconfigured something (a typo somwhere maybe?) :)
 
 Commits may `warn` you about insecure memory usage, you can ignore these.
 
