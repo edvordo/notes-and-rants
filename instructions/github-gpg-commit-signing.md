@@ -1,4 +1,4 @@
-# Signign commits on github via GPG on Windows (10)
+# Signing commits on github via GPG on Windows (10)
 
 <sup>Valid as of: 2018-03-27</sup>
 
