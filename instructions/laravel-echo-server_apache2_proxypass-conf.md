@@ -71,7 +71,7 @@ host with [broadcasting](https://laravel.com/docs/5.6/broadcasting) enabled
 ```
 <VirtualHost *:80>
     ServerAdmin webmaster@les.example.com
-    DocumentRoot "C:/server/www/les/public/"
+    DocumentRoot "D:/server/www/les/public/"
     ServerName les.example.com
     ErrorLog "D:/server/logs/les.example.com_error.log"
     CustomLog "D:/server/logs/les.example.com_access.log" combined
@@ -83,7 +83,7 @@ host with [broadcasting](https://laravel.com/docs/5.6/broadcasting) enabled
     ProxyPass /ws ws://127.0.0.1:6001/
     ProxyPassReverse /ws ws://127.0.0.1:6001/
 
-    <Directory "C:/server/www/les/public/">
+    <Directory "D:/server/www/les/public/">
         Options Indexes FollowSymLinks MultiViews
         AllowOverride all
         Require all granted
@@ -173,7 +173,7 @@ const app = new Vue({
                 console.log(e);// {now: 1563843453843.13543, user: "username", socket: null}
             });
         // testing laravel/passport :) 
-        axios.get('/api/user') // Amm\User should use the HasApiTokens trait from passport for this to work!
+        axios.get('/api/user') // App\User should use the HasApiTokens trait from passport for this to work!
             .then(e => {
                 console.log(e); // return the user json with id, username, email, ...
             })
